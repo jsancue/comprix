@@ -29,9 +29,7 @@ public class Buscar extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HttpSession sesion = request.getSession();
-		int id = (Integer) sesion.getAttribute("id");
 		String s = "";
-		String mensaje = "";
 
 		s = (request.getParameter("busqueda"));
 		System.out.println(s);

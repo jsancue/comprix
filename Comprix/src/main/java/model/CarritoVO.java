@@ -9,7 +9,7 @@ public class CarritoVO {
 	private String nombre;
 	private String apellidos;
 	private int cantidad;
-	private String precio;
+	private float precio;
 	private byte[] imagen;
 
 	public CarritoVO() {
@@ -17,7 +17,7 @@ public class CarritoVO {
 	}
 
 	public CarritoVO(int id, int id_usuario, int id_producto, String nombre, String apellidos, int cantidad,
-			String precio, byte[] imagen) {
+			float precio, byte[] imagen) {
 		super();
 		this.id = id;
 		this.id_usuario = id_usuario;
@@ -77,11 +77,11 @@ public class CarritoVO {
 		this.cantidad = cantidad;
 	}
 
-	public String getPrecio() {
+	public float getPrecio() {
 		return precio;
 	}
 
-	public void setPrecio(String precio) {
+	public void setPrecio(float precio) {
 		this.precio = precio;
 	}
 

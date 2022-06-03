@@ -73,8 +73,8 @@ ResultSet rs;
 				  		int id=rs.getInt(1);
 				  		String nombre=rs.getString(2);
 				  		String detalles=rs.getString(4);
-				  		String precio=rs.getString(5);
-				  		byte[] imagen = rs.getBytes(6);
+				  		Float precio=rs.getFloat(6);
+				  		byte[] imagen = rs.getBytes(5);
 		
 		%>
 		<form action="" class="caja" method="post">

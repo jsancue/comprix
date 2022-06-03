@@ -40,7 +40,7 @@ public class ProductoActualizar extends HttpServlet {
 		producto.setNombre(request.getParameter("nombre"));
 		producto.setCategoria(request.getParameter("categoria"));
 		producto.setDetalles(request.getParameter("detalles"));
-		producto.setPrecio(request.getParameter("precio"));
+		producto.setPrecio(Float.parseFloat(request.getParameter("precio")));
 		// producto.setImagen(request.getPart("imagen"));
 
 		Connection con;
@@ -54,7 +54,7 @@ public class ProductoActualizar extends HttpServlet {
 			pstm.setString(1, producto.getNombre());
 			pstm.setString(2, producto.getCategoria());
 			pstm.setString(3, producto.getDetalles());
-			pstm.setString(4, producto.getPrecio());
+			pstm.setFloat(4, producto.getPrecio());
 			pstm.setInt(5, pid);
 
 			int i = pstm.executeUpdate();

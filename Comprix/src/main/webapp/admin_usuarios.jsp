@@ -86,8 +86,6 @@
 		  		String email=rs.getString(4);
 		  		int tipo=rs.getInt(7);
 		  		byte[] imagen = rs.getBytes(9);
-		  		out.println(imagen);
-			  	
 		  	%>
       <div class="caja" style="">
          <img src="" alt="">

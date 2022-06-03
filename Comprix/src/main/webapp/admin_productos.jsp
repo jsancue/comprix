@@ -123,8 +123,8 @@
 		  		String nombre=rs.getString(2);
 		  		String categoria=rs.getString(3);
 		  		String detalles=rs.getString(4);
-		  		String precio=rs.getString(5);
-		  		byte[] imagen = rs.getBytes(6);
+		  		Float precio=rs.getFloat(6);
+		  		byte[] imagen = rs.getBytes(5);
 			  	
 		  	%>
 		  			<div class="caja">

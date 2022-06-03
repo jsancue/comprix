@@ -102,12 +102,12 @@
 				pstm.close();
 			} catch (Exception e) {
 				e.printStackTrace();
-			}}
-			
-			else{
-			  		%><p class="vacio">¡Todavía no hay mensajes!</p><% 
-			  	}
-			
+			}
+	 	}	
+		else{
+			%><p class="vacio">¡Todavía no hay mensajes!</p><% 
+		}
+		
 			 }catch (SQLException e) {
 			  		e.printStackTrace();
 			 }

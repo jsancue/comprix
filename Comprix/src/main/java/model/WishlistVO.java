@@ -8,14 +8,14 @@ public class WishlistVO {
 	private int id_producto;
 	private String nombre;
 	private String apellidos;
-	private String precio;
+	private float precio;
 	private byte[] imagen;
 
 	public WishlistVO() {
 		super();
 	}
 
-	public WishlistVO(int id, int id_usuario, int id_producto, String nombre, String apellidos, String precio,
+	public WishlistVO(int id, int id_usuario, int id_producto, String nombre, String apellidos, float precio,
 			byte[] imagen) {
 		super();
 		this.id = id;
@@ -67,11 +67,11 @@ public class WishlistVO {
 		this.apellidos = apellidos;
 	}
 
-	public String getPrecio() {
+	public float getPrecio() {
 		return precio;
 	}
 
-	public void setPrecio(String precio) {
+	public void setPrecio(float precio) {
 		this.precio = precio;
 	}
 

@@ -76,11 +76,11 @@ ResultSet rs;
 				  		int id=rs.getInt(1);
 				  		String nombre=rs.getString(2);
 				  		String detalles=rs.getString(4);
-				  		String precio=rs.getString(5);
-				  		byte[] imagen = rs.getBytes(6);
+				  		Float precio=rs.getFloat(6);
+				  		byte[] imagen = rs.getBytes(5);
 		
 		%>
-			<form action="" class="caja" method="post">
+			<form action="/AñadirLista" class="caja" method="post">
 				<div class="precio"><span><%=precio %></span>€/Kg</div>
 				<a class="fa-solid fa-eye" href="vistarapida.jsp?pid=<%=id%>"></a> 
 				<img alt="foto producto" src="">
@@ -90,8 +90,8 @@ ResultSet rs;
 				<input name="p_precio" type="hidden" value="<%=precio%>">
 				<input name="p_imagen" type="hidden" value="<%=imagen%>">
 				<input class="cantidad" min="1" name="p_cantidad" type="number" value="1">
-				<input class="btn-opcion" name="add_wishlist" type="submit" value="Añadir a la Wishlist"> 
-				<input class="btn" name="add_carrito" type="submit" value="Añadir al Carrito">
+				<input class="btn-opcion" name="wishlist" type="submit" value="Añadir a la Wishlist"> 
+				<input class="btn" name="carrito" type="submit" value="Añadir al Carrito">
 			</form>
 			<%
 				}try {

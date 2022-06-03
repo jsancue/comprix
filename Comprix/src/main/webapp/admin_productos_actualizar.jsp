@@ -75,7 +75,7 @@
 		      <input type="hidden" name="pid" value="<%=pid%>">
 		      <img src="" alt="">
 		      <input type="text" name="nombre" placeholder="Nombre del producto" required class="caja" value="<%=rs.getString(2)%>">
-		      <input type="number" name="precio" min="0" placeholder="Precio del producto" required class="caja" value="<%=rs.getString(5)%>">
+		      <input type="number" name="precio" min="0" placeholder="Precio del producto" required class="caja" value="<%=rs.getFloat(6)%>">
 		      <select name="categoria" class="caja" required>
 		         <option selected><%=rs.getString(3)%></option>
 		         <option value="Verdura">Verdura</option>

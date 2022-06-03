@@ -7,14 +7,14 @@ public class ProductoVO {
 	private String nombre;
 	private String categoria;
 	private String detalles;
-	private String precio;
+	private float precio;
 	private byte[] imagen;
 
 	public ProductoVO() {
 		super();
 	}
 
-	public ProductoVO(int id, String nombre, String categoria, String detalles, String precio, byte[] imagen) {
+	public ProductoVO(int id, String nombre, String categoria, String detalles, float precio, byte[] imagen) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
@@ -56,11 +56,11 @@ public class ProductoVO {
 		this.detalles = detalles;
 	}
 
-	public String getPrecio() {
+	public float getPrecio() {
 		return precio;
 	}
 
-	public void setPrecio(String precio) {
+	public void setPrecio(float precio) {
 		this.precio = precio;
 	}
 

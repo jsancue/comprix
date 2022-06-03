@@ -34,6 +34,6 @@
             <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i>Instagram</a>
             <a href="javascript:void(0)"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
         </div>
-
+	<%request.getSession().setAttribute("mensaje", null); %>
     </section>
 </footer>
